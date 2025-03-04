@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="tab2.js"></script>
+    <script src="mySketch.js"></script>
+</head>
+<body>
+    <div id="drop-zone">
+        <input type="file" id="file-input" accept="image/*" style="display: none;">
+        <div id="drop-text">
+            Drop image here or click to upload
+        </div>
+    </div>
+    <div id="controls">
+        <div class="slider-container">
+            <label for="velocitySlider">Speed:</label>
+            <input type="range" id="velocitySlider" min="0.5" max="15" step="0.5" value="1">
+        </div>
+        <div class="slider-container">
+            <label for="curlinessSlider">Curvature:</label>
+            <input type="range" id="curlinessSlider" min="0" max="3" step="0.1" value="1">
+        </div>
+        <button id="saveButton">Save Screenshot</button>
+    </div>
+</body>
+</html>
